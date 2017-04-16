@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+    <a href="javascript:;" class="hehe"
+       v-bind:class="{'check':item.checked}" @click="selectedProduct(item)"></a>
+                        <!--绑定class属性,增加一个类名,check,判断item.checked为true时添加,反之则没有-->
+                        <!--点击事件执行函数,函数传入当前项,根据判断条件给checked赋值true或其他-->
+</div>
+<script src="js/lib/vue2.min.js"></script>
+<script src="js/lib/vue-resource.min.js"></script>
+<script src="test.js"></script>
+</body>
+</html>
